@@ -20,7 +20,12 @@ class ViewController: UIViewController {
 
     
     @IBAction func askButtonPressed(_ sender: UIButton) {
-        image.image = UIImage(named: "ball3")
+        let ballsImages = ["ball1", "ball2", "ball3", "ball4","ball5"]
+        
+        let index = Int.random(in: 0...4)
+        
+        image.image = UIImage(named: ballsImages[index])
+        
     }
     
 
